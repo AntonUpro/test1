@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+    <meta charset="utf-8" />
+    <title>Шахматная доска</title>
+    <!-- <link rel="stylesheet" href="task15.css" /> -->
+    <style>
+.main0 {
+    width: 900px;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 2px solid rgb(43, 44, 43);;
+    box-shadow: 3px -3px 3px;
+}
+.main1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 800px;
+    border: 2px solid rgba(29, 29, 29, 0.5);
+    margin-top: 48px;
+    display: grid;
+    grid-template-rows: 39px 722px 39px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 39px 722px 39px;
+}
+.col {
+    display: grid;
+    grid-template-rows: repeat(8, 90px);
+    margin-top: 1px;
+    line-height: 90px;
+}
+.row-2 {
+    display: grid;
+    grid-template-columns: repeat(8, 90px);
+    margin-left: 1px;
+    line-height: 39px;
+    writing-mode: horizontal-tb;
+}
+.val {
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.rot {
+    transform:rotate(180deg);
+}
+
+.main2 {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template: repeat(8, 90px)/repeat(8, 90px);
+    border: 1px solid black;
+}
+
+.black {
+    background-color: black;
+}
+    </style>
+    </head>
+<body>
+    <div class="main0">
+        <div class="main1">   
+            <div class="row">
+                <div class="val"></div>
+                <div class="row-2">
+                    <div class="val rot">H</div>
+                    <div class="val rot">G</div>
+                    <div class="val rot">F</div>
+                    <div class="val rot">E</div>
+                    <div class="val rot">D</div>
+                    <div class="val rot">C</div>
+                    <div class="val rot">B</div>
+                    <div class="val rot">A</div>
+                </div>
+                <div class="val"></div>
+            </div>
+                
+
+            <div class="row">
+                <div class="col">
+                    <div class="val">8</div>
+                    <div class="val">7</div>
+                    <div class="val">6</div>
+                    <div class="val">5</div>
+                    <div class="val">4</div>
+                    <div class="val">3</div>
+                    <div class="val">2</div>
+                    <div class="val">1</div>
+                </div>
+
+                <div class="main2">
+
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+
+                </div>
+
+                <div class="col">
+                    <div class="val rot">8</div>
+                    <div class="val rot">7</div>
+                    <div class="val rot">6</div>
+                    <div class="val rot">5</div>
+                    <div class="val rot">4</div>
+                    <div class="val rot">3</div>
+                    <div class="val rot">2</div>
+                    <div class="val rot">1</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="val"></div>
+                <div class="row-2">
+                    <div class="val">A</div>
+                    <div class="val">B</div>
+                    <div class="val">C</div>
+                    <div class="val">D</div>
+                    <div class="val">E</div>
+                    <div class="val">F</div>
+                    <div class="val">G</div>
+                    <div class="val">H</div>
+                </div>
+                <div class="val"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

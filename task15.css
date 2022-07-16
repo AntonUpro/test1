@@ -1,0 +1,31 @@
+.main0 {
+    width: 900px;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 3px -3px 3px;
+}
+.main1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 800px;
+    border: 2px solid rgba(123, 132, 123, 0.5);
+    margin-top: 50px;
+}
+
+.main2 {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template: repeat(8, 90px)/repeat(8, 90px);
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+    margin-top: 40px;
+}
+.black {
+    background-color: black;
+}
