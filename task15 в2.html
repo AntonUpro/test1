@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+    <meta charset="utf-8" />
+    <title>Шахматная доска</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+}
+.main0 {
+    width: 900px;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 2px solid rgb(43, 44, 43);;
+    box-shadow: 3px -3px 3px;
+    margin-top: 8px;
+}
+.main1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 800px;
+    border: 2px solid rgba(29, 29, 29, 0.5);
+    margin-top: 48px;
+}
+.main {
+    display: flex;
+    flex-direction: row;  
+}
+.main2 {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table {
+    border-collapse: collapse;
+}
+.table td {
+    width: 90px;
+    height: 90px;
+}
+.table-1 {
+    margin-left: 40px;
+    height: 39px;
+}
+.row td {
+    height: 39px;
+    width: 90px;
+}
+.table-2 td {
+    height: 90px;
+    width: 39px;
+}
+.black {
+    background-color: black;
+}
+.rot {
+    transform:rotate(180deg);
+}
+    </style>
+    </head>
+<body>
+    <div class="main0">
+        <div class="main1"> 
+            <table class="table-1">
+                <tr class="row rot"><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td></tr>  
+            </table>
+            <div class="main">
+                <table class="table-2">
+                    <tr><td>8</td></tr><tr><td>7</td></tr><tr><td>6</td></tr><tr><td>5</td></tr><tr><td>4</td></tr><tr><td>3</td></tr><tr><td>2</td></tr><tr><td>1</td></tr>  
+                </table>
+                <div class="main2">
+                    <table class="table">
+                    <tr><td class="black"></td><td></td><td class="black"></td><td></td><td class="black"></td><td></td><td class="black"></td><td></td></tr>
+                    <tr><td></td><td class="black"></td><td></td><td class="black"></td><td></td><td class="black"></td><td></td><td class="black"></td></tr>
+                    <tr><td class="black"></td><td></td><td class="black"></td><td></td><td class="black"></td><td></td><td class="black"></td><td></td></tr>
+                    <tr><td></td><td class="black"></td><td></td><td class="black"></td><td></td><td class="black"></td><td></td><td class="black"></td></tr>
+                    <tr><td class="black"></td><td></td><td class="black"></td><td></td><td class="black"></td><td></td><td class="black"></td><td></td></tr>
+                    <tr><td></td><td class="black"></td><td></td><td class="black"></td><td></td><td class="black"></td><td></td><td class="black"></td></tr>
+                    <tr><td class="black"></td><td></td><td class="black"></td><td></td><td class="black"></td><td></td><td class="black"></td><td></td></tr>
+                    <tr><td></td><td class="black"></td><td></td><td class="black"></td><td></td><td class="black"></td><td></td><td class="black"></td></tr>
+                    </table>
+                </div>
+                <table class="table-2 rot">
+                    <tr><td>8</td></tr><tr><td>7</td></tr><tr><td>6</td></tr><tr><td>5</td></tr><tr><td>4</td></tr><tr><td>3</td></tr><tr><td>2</td></tr><tr><td>1</td></tr>  
+                </table>
+            </div>
+            <table class="table-1">
+                <tr class="row"><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td></tr>  
+            </table>
+        </div>
+    </div>
+</body>
+</html>
